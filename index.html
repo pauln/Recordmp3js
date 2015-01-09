@@ -5,11 +5,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Live input record and playback</title>
   <style type='text/css'>
-    @import '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css';
-    @import '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css';
+    @import 'bower_components/bootstrap/dist/css/bootstrap.min.css';
+    @import 'bower_components/bootstrap/dist/css/bootstrap-theme.min.css';
     ul { list-style: none; }
     #recordingslist audio { display: block; margin-bottom: 10px; }
   </style>
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -67,6 +68,10 @@
     console.log(data);
     recorder.clear();
   }
+  </script>
+  <script>
+    window.exports = window;
+    window.exports.workerPath = "";
   </script>
   <script src="js/recordmp3.js"></script>
 </body>
